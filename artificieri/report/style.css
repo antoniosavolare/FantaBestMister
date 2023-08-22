@@ -7,7 +7,10 @@
     padding-top: 66.64%; /* (img-height / img-width * container-width) */
                 /* (853 / 1280 * 100) */
 }
-
+.aParent div {
+    float: left;
+    clear: none; 
+}
 body {
     background-color: #d2fcf5;
 }
@@ -63,3 +66,19 @@ left: 50%;
     left: 50%;
 }
   
+.aligned-span {
+display: inline-block;
+width: 150px; /* Imposta la larghezza desiderata per allineare il testo */
+text-align: center; /* Puoi usare 'left', 'center' o 'right' a seconda del tuo desiderio di allineamento */
+}
+.spanRole {
+    width: 50px; /* Imposta la larghezza desiderata per allineare il testo */
+}
+
+@media print
+{    
+    .no-print, .no-print *
+    {
+        display: none !important;
+    }
+}
